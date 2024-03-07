@@ -30,7 +30,7 @@ public class VetorObjeto {
     	}
        
        for (int i = 0; i < this.tamanho(); i++) {
-    	   lista += "\n\nTitulo: "+livro[i].autor+"\nAutor: "+livro[i].getAutor()+"\nData de lançamento: "+livro[i].getdataLancamento();
+    	   lista += "\n\nTitulo: "+livro[i].getTitulo()+"\nAutor: "+livro[i].getAutor()+"\nData de lançamento: "+livro[i].getdataLancamento();
    	}
 
         
