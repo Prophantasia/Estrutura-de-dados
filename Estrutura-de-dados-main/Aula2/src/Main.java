@@ -25,10 +25,8 @@ public class Main {
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
-					ui.saida(""+vetor.tamanho(),ui.titulo,ui.icone);
-					ui.saida(""+vetor.toString(), ui.titulo, ui.icone);
-			break;
-			
+
+					break;
 			case 2:
 				
 					try {
@@ -40,9 +38,11 @@ public class Main {
 
 			break;
 			case 3:
+				ui.saida(vetor.listar(), ui.titulo, ui.icone);
 					break;
 			case 4:
 				rodar = false;
+				
 				break;
 			}
 

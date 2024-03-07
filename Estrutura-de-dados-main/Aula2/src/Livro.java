@@ -1,7 +1,7 @@
 public class Livro {
 	
 	private String titulo;
-	private String autor;
+	public String autor;
 	private String dataLancamento;
 
 
@@ -40,5 +40,12 @@ public String getdataLancamento() {
 public void setdataLancamento(String dataLancamento) {
 	this.dataLancamento = dataLancamento;
 }
+
+@Override
+public String toString() {
+	return "Livro [titulo=" + titulo + ", autor=" + autor + ", dataLancamento=" + dataLancamento + "]";
+}
+
+
 
 }

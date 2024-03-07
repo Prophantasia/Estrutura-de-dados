@@ -20,13 +20,19 @@ public class VetorObjeto {
         return this.tamanho;
     }
 
-    public String listar(){
-        String lista = "Lista de livros\n\n";
+    public String listar() {
+        String lista = "";
 
-       for (Livro livro : elementos) {
-        lista += "Titulo: "+livro.getTitulo()+"\nAutor: "+livro.getAutor()+"\nData de lançamento: "+livro.getdataLancamento();
+        Livro[] livro = new Livro[this.tamanho()];
         
-    }
+       for (int i = 0; i < this.tamanho(); i++) {
+    	    livro[i] = elementos[i];
+    	}
+       
+       for (int i = 0; i < this.tamanho(); i++) {
+    	   lista += "\n\nTitulo: "+livro[i].autor+"\nAutor: "+livro[i].getAutor()+"\nData de lançamento: "+livro[i].getdataLancamento();
+   	}
+
         
     return lista;
 }
