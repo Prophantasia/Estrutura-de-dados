@@ -9,11 +9,11 @@ public class Aresta<TIPO> {
         this.fim = fim;
     }
 
-    public double getdistancia() {
+    public double getDistancia() {
         return distancia;
     }
 
-    public void setdistancia(double distancia) {
+    public void setDistancia(double distancia) {
         this.distancia = distancia;
     }
 
